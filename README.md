@@ -1,58 +1,71 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+📄 AI Resume Analyzer (Laravel 13)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+An intelligent AI-powered Resume Analyzer built with Laravel 13, integrating the laravel/ai package and Google Gemini API to evaluate resumes and provide smart career insights.
 
-## About Laravel
+🚀 Features
+📊 ATS Score Calculation
+Automatically evaluates resume compatibility with Applicant Tracking Systems (ATS)
+Provides a percentage-based score
+🤖 AI-Powered Analysis (Gemini API)
+Uses Google Gemini AI to deeply analyze resume content
+💪 Strengths Detection
+Highlights key strengths in skills, experience, and profile
+⚠️ Weakness Identification
+Detects missing skills, formatting issues, and improvements needed
+📈 Improvement Suggestions
+Provides actionable recommendations to improve resume quality
+🧠 Smart Resume Insights
+Overall profile evaluation with AI-based feedback
+🛠️ Tech Stack
+Backend: Laravel 13
+AI Integration: laravel/ai package
+AI Model: Google Gemini API
+Language: PHP 8+
+Frontend: Blade / Bootstrap (optional depending on your UI)
+⚙️ How It Works
+User uploads or inputs resume data
+System parses resume content
+Data is sent to Gemini AI API
+AI returns structured analysis:
+ATS Score
+Strengths
+Weaknesses
+Improvement Suggestions
+Results are displayed in a user-friendly dashboard
+📊 Output Example
+ATS Score: 78%
+Strengths:
+Strong technical skills
+Good project experience
+Weaknesses:
+Missing certifications
+Lack of quantifiable achievements
+Improvements:
+Add measurable results (e.g., increased sales by 20%)
+Improve keyword optimization for ATS systems
+🔧 Installation
+git clone https://github.com/your-username/ai-resume-analyzer.git
+cd ai-resume-analyzer
+composer install
+npm install && npm run dev
+cp .env.example .env
+php artisan key:generate
+🔑 Environment Variables
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Add your API keys in .env:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+GEMINI_API_KEY=your_gemini_api_key
+▶️ Run Project
+php artisan serve
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Visit: http://localhost:8000
 
-## Learning Laravel
+📌 Future Improvements
+PDF Resume Upload Support
+Multi-language Resume Analysis
+Job Role Matching System
+Resume Score History Tracking
+Export Analysis as PDF Report
+👨‍💻 Developer
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
-
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
-
-```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
-```
-
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Built with ❤️ using Laravel 13 + AI Integration
