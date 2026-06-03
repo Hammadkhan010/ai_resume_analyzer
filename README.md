@@ -1,4 +1,4 @@
-#📄 AI Resume Analyzer (Laravel 13)
+📄 AI Resume Analyzer (Laravel 13)
 
 An intelligent AI-powered Resume Analyzer built with Laravel 13, integrating the laravel/ai package and Google Gemini API to evaluate resumes and provide smart career insights.
 
